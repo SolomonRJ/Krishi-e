@@ -233,9 +233,10 @@ const Disease = () => {
                                     <div className="w-1.5 h-6 bg-primary rounded-full" />
                                     Diagnosis & Treatment
                                 </h3>
-                                <div className="prose prose-sm prose-green bg-gray-50 p-5 rounded-2xl text-gray-600 leading-relaxed">
-                                    {result.recommendation.replace(/<br\/>/g, '\n')}
-                                </div>
+                                <div
+                                    className="prose prose-sm prose-green bg-gray-50 p-5 rounded-2xl text-gray-600 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: result.recommendation }}
+                                />
                             </div>
 
                             <Button onClick={reset} size="lg" variant="outline" className="w-full h-14 rounded-2xl border-2 text-lg font-bold">
