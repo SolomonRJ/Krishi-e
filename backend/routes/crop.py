@@ -39,8 +39,8 @@ def recommend_crop(data: CropInput):
             data.potassium,
             data.temperature,
             data.humidity,
-            data.rainfall,
-            data.ph
+            data.ph,
+            data.rainfall
         ]])
 
         if features.shape[1] != model.n_features_in_:
