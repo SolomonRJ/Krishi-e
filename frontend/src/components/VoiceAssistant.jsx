@@ -75,7 +75,7 @@ const VoiceAssistant = () => {
 
     return (
         <div
-            className={`fixed bottom-24 right-6 z-50 rounded-full overflow-hidden cursor-pointer shadow-xl transition-all duration-500 ease-in-out ${isListening ? 'w-32 h-32 shadow-2xl' : 'w-16 h-16 hover:scale-110'
+            className={`fixed bottom-[calc(6rem+env(safe-area-inset-bottom))] right-6 z-50 rounded-full overflow-hidden cursor-pointer shadow-xl transition-all duration-500 ease-in-out ${isListening ? 'w-32 h-32 shadow-2xl' : 'w-16 h-16 hover:scale-110'
                 }`}
             onClick={toggleListening}
             role="button"

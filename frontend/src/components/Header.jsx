@@ -12,7 +12,7 @@ const Header = () => {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b glass">
+        <header className="sticky top-0 z-50 w-full border-b glass pt-[env(safe-area-inset-top)]">
             <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-2 font-bold tracking-tight text-xl">
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">

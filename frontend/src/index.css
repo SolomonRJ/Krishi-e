@@ -83,6 +83,15 @@
     @apply bg-background text-foreground;
     font-family: 'Plus Jakarta Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: pan-x pan-y;
+  }
+  
+  /* Allow text selection in specific areas */
+  input, textarea, .selectable {
+    user-select: text;
   }
 }
 
