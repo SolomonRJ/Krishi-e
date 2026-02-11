@@ -38,9 +38,7 @@ const Header = () => {
                         </Button>
 
                         <Link to="/" className="flex items-center gap-2 font-bold tracking-tight text-xl">
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-                                <Sprout className="h-5 w-5" />
-                            </div>
+                            <img src="/pwa-192x192.png" alt="Krishi AI Logo" className="h-8 w-8 rounded-lg shadow-sm" />
                             <span className="text-foreground">Krishi<span className="text-primary">AI</span></span>
                         </Link>
                     </div>
