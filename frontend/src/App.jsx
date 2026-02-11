@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Disease from './pages/Disease';
 import Crop from './pages/Crop';
 import Fertilizer from './pages/Fertilizer';
+import KVKLocator from './pages/KVKLocator';
 import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
 
@@ -63,6 +64,7 @@ const App = () => {
                   <main className="flex-1 container mx-auto px-4 py-6 pb-24">
                     <Routes>
                       <Route path="/" element={<Home />} />
+                      <Route path="/map" element={<KVKLocator />} />
                       <Route path="/disease" element={<Disease />} />
                       <Route path="/crop" element={<Crop />} />
                       <Route path="/fertilizer" element={<Fertilizer />} />

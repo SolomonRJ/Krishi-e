@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, ScanLine, Sprout, Droplets } from 'lucide-react';
+import { Home, ScanLine, Sprout, Droplets, Map } from 'lucide-react';
 import { cn } from '../lib/utils'; // Assuming I'll make a utils file, but I can just use inline logic for now. Or standard template literals.
 
 const BottomNav = () => {
     const navItems = [
+        { path: '/map', icon: Map, label: 'Map' },
         { path: '/', icon: Home, label: 'Home' },
         { path: '/disease', icon: ScanLine, label: 'Disease' },
         { path: '/crop', icon: Sprout, label: 'Crop' },
