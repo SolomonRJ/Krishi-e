@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sprout, Bell, Globe, Menu, X, Home, ScanLine, Droplets, Map, FileText } from 'lucide-react';
+import { Sprout, Bell, Globe, Menu, X, Home, ScanLine, Droplets, Map, FileText, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { UserButton, SignedIn } from "@clerk/clerk-react";
 import { Button } from './ui/button';
@@ -20,6 +20,7 @@ const Header = () => {
     const navItems = [
         { path: '/', label: 'Home', icon: Home },
         { path: '/map', label: 'Map', icon: Map },
+        { path: '/market', label: 'Market Intelligence', icon: TrendingUp },
         { path: '/disease', label: 'Disease Prediction', icon: ScanLine },
         { path: '/crop', label: 'Crop Recommendation', icon: Sprout },
         { path: '/fertilizer', label: 'Fertilizer Recommendation', icon: Droplets },
@@ -126,8 +127,8 @@ const Header = () => {
                                         to={item.path}
                                         onClick={closeMenu}
                                         className={`flex items-center gap-3 px-3 py-3 rounded-lg text-sm font-medium transition-colors ${isActive
-                                                ? 'bg-primary/10 text-primary'
-                                                : 'text-muted-foreground hover:bg-secondary hover:text-foreground'
+                                            ? 'bg-primary/10 text-primary'
+                                            : 'text-muted-foreground hover:bg-secondary hover:text-foreground'
                                             }`}
                                     >
                                         <Icon className="h-5 w-5" />
