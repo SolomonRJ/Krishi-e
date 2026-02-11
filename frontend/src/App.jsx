@@ -11,6 +11,7 @@ import Fertilizer from './pages/Fertilizer';
 import KVKLocator from './pages/KVKLocator';
 import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
+import Schemes from './pages/Schemes';
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -68,6 +69,7 @@ const App = () => {
                       <Route path="/disease" element={<Disease />} />
                       <Route path="/crop" element={<Crop />} />
                       <Route path="/fertilizer" element={<Fertilizer />} />
+                      <Route path="/schemes" element={<Schemes />} />
                     </Routes>
                   </main>
                   <VoiceAssistant />
